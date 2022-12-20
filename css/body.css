@@ -1,0 +1,9 @@
+html {
+    box-sizing: border-box;
+    background-color: rgba(187, 216, 223, 0.66);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
