@@ -1,7 +1,8 @@
 html {
     box-sizing: border-box;
-    background-color: rgba(187, 216, 223, 0.66);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../imagies/currency.jpg");
+    background-size: cover; 
 }
 *, ::before, ::after {
     box-sizing: inherit;
