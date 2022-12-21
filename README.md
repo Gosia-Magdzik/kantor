@@ -1,6 +1,6 @@
 # Currency - conventer
  
-![gif](https://i.postimg.cc/bwd2HqjQ/animation.gif)
+![gif](animation.gif)
 
 ## Demo: 
 https://gosia-magdzik.github.io/kantor/
