@@ -1,19 +1,19 @@
 {
-    let formElement = document.querySelector(".js-form");
-    let amountElement = document.querySelector(".js-amount");
-    let currencyElement = document.querySelector(".js-currency");
-    let resultElement = document.querySelector(".js-result");
+    const formElement = document.querySelector(".js-form");
+    const amountElement = document.querySelector(".js-amount");
+    const currencyElement = document.querySelector(".js-currency");
+    const resultElement = document.querySelector(".js-result");
     
     formElement.addEventListener("submit", (event) => {
         event.preventDefault();
     
-        let eurRate = 4.7;
-        let gbpRate = 5.39;
-        let nokRate = 0.45;
-        let usdRate = 4.42;
+        const eurRate = 4.7;
+        const gbpRate = 5.39;
+        const nokRate = 0.45;
+        const usdRate = 4.42;
     
-        let amount = amountElement.value;
-        let currency = currencyElement.value;
+        const amount = amountElement.value;
+        const currency = currencyElement.value;
         let rate;
     
         switch (currency) {
@@ -30,8 +30,10 @@
                 rate = usdRate;
         }
     
-        let result = amount / rate;
+        const result = amount / rate;
     
         resultElement.innerHTML = `${result.toFixed(2)} ${currency}`;
-    });    
+    });
 }
+
+
