@@ -1,39 +1,42 @@
 {
-    const formElement = document.querySelector(".js-form");
-    const amountElement = document.querySelector(".js-amount");
-    const currencyElement = document.querySelector(".js-currency");
-    const resultElement = document.querySelector(".js-result");
-    
-    formElement.addEventListener("submit", (event) => {
-        event.preventDefault();
-    
+    const currencyValue = (currencyElement) => {
+        const currency = currencyElement.value;
+
         const eurRate = 4.7;
         const gbpRate = 5.39;
         const nokRate = 0.45;
         const usdRate = 4.42;
-    
-        const amount = amountElement.value;
-        const currency = currencyElement.value;
-        let rate;
-    
-        switch (currency) {
+
+         switch (currency) {
             case "EUR":
-                rate = eurRate;
-                break;
+                return eurRate;               
             case "GBP":
-                rate = gbpRate;
-                break;
+                return gbpRate;               
             case "NOK":
-                rate = nokRate;
-                break;
+                return nokRate;               
             case "USD":
-                rate = usdRate;
+                return usdRate;
         }
+    };
+    const updateResult = (result, currencyElement) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerHTML = result.toFixed(2) + currencyElement.value;   
+    };
+    const onFormSumit = (event) => {
+        event.preventDefault();
+        const currencyElement = document.querySelector(".js-currency");
+        const amountElement = document.querySelector(".js-amount");
+
+        const amount = amountElement.value;
+        const result = amount / currencyValue(currencyElement);
+
+    updateResult (result, currencyElement)
+    };
+
+    const init = () => {
+        const formElement = document.querySelector(".js-form"); 
+        formElement.addEventListener("submit", onFormSumit);
+    };
     
-        const result = amount / rate;
-    
-        resultElement.innerHTML = `${result.toFixed(2)} ${currency}`;
-    });
+    init()    
 }
-
-
