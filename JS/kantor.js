@@ -19,8 +19,8 @@
         }
     };
     const updateResult = (result, currencyElement) => {
-        const resultElement = document.querySelector(".js-result");
-        resultElement.innerHTML = result.toFixed(2) + currencyElement.value;   
+        const resultElement = document.querySelector(" .js-result");
+        resultElement.innerHTML = result.toFixed(2) + " " + currencyElement.value;   
     };
     const onFormSumit = (event) => {
         event.preventDefault();
