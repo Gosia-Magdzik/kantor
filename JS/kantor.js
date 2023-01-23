@@ -24,6 +24,7 @@
     };
     const onFormSumit = (event) => {
         event.preventDefault();
+
         const currencyElement = document.querySelector(".js-currency");
         const amountElement = document.querySelector(".js-amount");
 
@@ -35,6 +36,7 @@
 
     const init = () => {
         const formElement = document.querySelector(".js-form"); 
+        
         formElement.addEventListener("submit", onFormSumit);
     };
     
