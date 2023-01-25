@@ -9,12 +9,12 @@ html {
 
 .body {
     background-image: url("../images/currency.jpg");
-    opacity: 0.5;
     background-size: cover; 
     background-position: center;
     min-height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
+
 
 
 
