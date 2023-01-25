@@ -8,12 +8,15 @@ html {
 }
 
 .body {
-    background-image: url("../images/currency.jpg");
+    background-image: url("../images/currency.jpg" );
     background-size: cover; 
     background-position: center;
     min-height: 100vh;
     font-family: Verdana, Tahoma, sans-serif;
+    backdrop-filter: blur(2px);
 }
+
+
 
 
 
