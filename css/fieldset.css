@@ -1,7 +1,10 @@
 
-.fieldset {
-    flex-basis: 550px;
+.form {
+    flex-basis: 500px; 
     margin: 0 auto;
+}
+
+.fieldset {
     border: 1px solid black;
     border-radius: 15px;
     background-color: rgb(109, 152, 147);
